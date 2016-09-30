@@ -16,7 +16,7 @@ if (empty($_SESSION['access_token']) || empty($_SESSION['access_token']['oauth_t
 /* Get user access tokens out of the session. */
 $access_token = $_SESSION['access_token'];
 
-/* Create a TwitterOauth object with consumer/user tokens. */
+/* Create a TwitterOauth object with consumer/user tokens. Changed */
 $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token['oauth_token'], $access_token['oauth_token_secret']);
 
 /* If method is set change API call made. Test is called by default. */
